@@ -1,8 +1,8 @@
 import reducer from './reducer';
 
-export * as audioOperations from './operations';
-export * as audioActions from './actions';
-export * as audioTypes from './types';
-export * as audioSelectors from './selectors';
+export { _addAudio, _removeAudio } from './operations';
+export { addAudio, removeAudio } from './actions';
+export { ADD_AUDIO, REMOVE_AUDIO } from './types';
+export { getAllAudioItems } from './selectors';
 
 export default reducer;

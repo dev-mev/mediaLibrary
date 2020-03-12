@@ -1,6 +1,7 @@
 import React from 'react';
 import T from 'prop-types';
-import { AppLoading, Permissions } from 'expo';
+import { AppLoading } from 'expo';
+import * as Permissions from 'expo-permissions'
 import { BackHandler, View, UIManager } from 'react-native';
 import { Provider } from 'react-redux';
 import {
@@ -31,6 +32,8 @@ const App = ({
       />
     );
   }
+
+  _isMounted = false;
 
   return (
     <Provider store={store}>
@@ -71,9 +74,13 @@ const enhance = compose(
     },
   }),
   lifecycle({
-    componentWillMount() {
+    componentDidMount() {
+      this._isMounted = true;
       BackHandler.addEventListener('hardwareBackPress', this.props.navigateBack);
     },
+    componentWillUnmount() {
+      this._isMounted = false;
+    }  
   }),
 );
 

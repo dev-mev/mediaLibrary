@@ -1,6 +1,6 @@
 import reducer from './NavigationReducer';
 
-export * as navigationOperations from './operations';
-export * as navigationTypes from './types';
+export { navigationOperations } from './operations';
+export { navigationTypes } from './types';
 
 export default reducer;
