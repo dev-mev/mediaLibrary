@@ -1,4 +1,4 @@
-import { Camera } from 'expo-camera';
+import { Camera } from 'expo';
 import {
   withHandlers,
   hoistStatics,
@@ -8,13 +8,13 @@ import {
 import moment from 'moment/moment';
 import uuid from 'uuid';
 import { connect } from 'react-redux';
-import { _addVideo, _removeVideo } from '../../modules/video';
+import { videoOperations } from '../../modules/video';
 import RecordVideoScreenView from './RecordVideoScreenView';
 import screens from '../../navigation/screens';
 
 
 const mapDispatchToProps = {
-  addVideo: _addVideo,
+  addVideo: videoOperations.addVideo,
 };
 
 const enhancer = compose(

@@ -1,8 +1,8 @@
 import reducer from './reducer';
 
-export { _addVideo, _removeVideo } from './operations';
-export { addVideo, removeVideo } from './actions';
-export { ADD_VIDEO, REMOVE_VIDEO } from './types';
-export { getAllVideoItems } from './selectors';
+export * as videoOperations from './operations';
+export * as videoActions from './actions';
+export * as videoTypes from './types';
+export * as videoSelectors from './selectors';
 
 export default reducer;

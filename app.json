@@ -4,20 +4,17 @@
     "description": "Multimedia Notes",
     "slug": "multimedia-notes",
     "privacy": "unlisted",
-    "sdkVersion": "36.0.0",
+    "sdkVersion": "25.0.0",
     "version": "0.1.0",
+    "githubUrl": "https://github.com/apiko-dev/Multimedia-Notes",
     "orientation": "portrait",
     "icon": "./assets/icons/app-icon.png",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.MollySoftware.multimediaNotes"
+      "bundleIdentifier": "com.ApikoSoftware.multimediaNotes"
     },
     "android": {
-      "package": "com.MollySoftware.multimediaNotes"
-    },
-    "platforms": [
-      "ios",
-      "android"
-    ]
+      "package": "com.ApikoSoftware.multimediaNotes"
+    }
   }
 }

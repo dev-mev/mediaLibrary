@@ -8,7 +8,7 @@ import { Feather } from '@expo/vector-icons';
 import { Icon } from '../../../../components';
 import { globalStyles } from '../../../../styles';
 import { durationToStr } from '../../../../utils/dateHelper';
-import { recordDate } from '../../../../constants';
+import { calendars } from '../../../../constants';
 import s from './styles';
 
 const AudioItem = ({
@@ -54,7 +54,7 @@ const AudioItem = ({
               ellipsizeMode="tail"
               style={[s.dateText, s.secondaryText]}
             >
-              {moment(recordDate).calendar(null, recordDate)}
+              {moment(recordDate).calendar(null, calendars.recordDate)}
             </Text>}
           </View>
 

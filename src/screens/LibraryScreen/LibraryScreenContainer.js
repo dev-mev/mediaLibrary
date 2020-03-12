@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { LayoutAnimation } from 'react-native';
-import { Audio } from 'expo-av';
+import { Audio } from 'expo';
 import {
   compose,
   hoistStatics,
@@ -8,19 +8,19 @@ import {
   withState,
   withPropsOnChange, withStateHandlers, lifecycle,
 } from 'recompose';
-import { getAllAudioItems, _addAudio, _removeAudio } from '../../modules/audio';
-import { getAllVideoItems, _addVideo, _removeVideo } from '../../modules/video';
+import { audioSelectors, audioOperations } from '../../modules/audio';
+import { videoSelectors, videoOperations } from '../../modules/video';
 import LibraryScreenView from './LibraryScreenView';
 import { setParamsOnDidMount, withClassVariableHandlers } from '../../utils/enhancers';
 
 const mapStateToProps = state => ({
-  audioItems: getAllAudioItems(state),
-  videoItems: getAllVideoItems(state),
+  audioItems: audioSelectors.getAllAudioItems(state),
+  videoItems: videoSelectors.getAllVideoItems(state),
 });
 
 const mapDispatchToProps = {
-  removeAudio: _removeAudio,
-  removeVideo: _removeVideo,
+  removeAudio: audioOperations.removeAudio,
+  removeVideo: videoOperations.removeVideo,
 };
 
 const enhancer = compose(

@@ -1,6 +1,6 @@
 import { createAction } from 'redux-actions';
-import { ADD_VIDEO, REMOVE_VIDEO } from './types';
+import * as types from './types';
 
-export const addVideo = createAction(ADD_VIDEO);
-export const removeVideo = createAction(REMOVE_VIDEO);
+export const addVideo = createAction(types.ADD_VIDEO);
+export const removeVideo = createAction(types.REMOVE_VIDEO);
 

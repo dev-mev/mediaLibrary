@@ -1,6 +1,6 @@
-import { addVideo, removeVideo } from './actions';
+import * as actions from './actions';
 
-export const _addVideo = videoUri => addVideo(videoUri);
+export const addVideo = videoUri => actions.addVideo(videoUri);
 
-export const _removeVideo = videoId => removeVideo(videoId);
+export const removeVideo = videoId => actions.removeVideo(videoId);
 

@@ -1,6 +1,6 @@
-import { addAudio, removeAudio } from './actions';
+import * as actions from './actions';
 
-export const _addAudio = audioUri => addAudio(audioUri);
+export const addAudio = audioUri => actions.addAudio(audioUri);
 
-export const _removeAudio = audioId => removeAudio(audioId);
+export const removeAudio = audioId => actions.removeAudio(audioId);
 

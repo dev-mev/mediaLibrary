@@ -1,7 +1,7 @@
 import React from 'react';
 import T from 'prop-types';
 import { View, Text, TouchableOpacity, TextInput } from 'react-native';
-import { Camera } from 'expo-camera';
+import { Camera } from 'expo';
 import { Ionicons, FontAwesome } from '@expo/vector-icons';
 import { Button } from 'react-native-elements';
 import { Icon } from '../../components';
@@ -108,7 +108,7 @@ const RecordVideoScreen = ({
                 <Icon
                   size={62}
                   IconSet={Ionicons}
-                  iconName="ios-reverse-camera"
+                  iconName="ios-reverse-camera-outline"
                 />
               </TouchableOpacity>
             )}

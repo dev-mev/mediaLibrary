@@ -1,6 +1,6 @@
 import { handleActions } from 'redux-actions';
 import R from 'ramda';
-import { ADD_AUDIO, REMOVE_AUDIO } from './types';
+import * as types from './types';
 
 import { mergeIn } from '../../utils/stateHelpers';
 
@@ -19,7 +19,7 @@ const INITIAL_STATE = {
 };
 
 export default handleActions({
-  [ADD_AUDIO]: mergeIn((action, state) => ({
+  [types.ADD_AUDIO]: mergeIn((action, state) => ({
     audioItemsIds: [action.payload.id].concat(state.audioItemsIds),
     audioItems: {
       ...state.audioItems,
@@ -27,7 +27,7 @@ export default handleActions({
     },
   })),
 
-  [REMOVE_AUDIO]: mergeIn((action, state) => ({
+  [types.REMOVE_AUDIO]: mergeIn((action, state) => ({
     audioItemsIds: state.audioItemsIds.filter(i => action.payload !== i),
     audioItems: R.omit([action.payload], state.audioItems),
   })),
