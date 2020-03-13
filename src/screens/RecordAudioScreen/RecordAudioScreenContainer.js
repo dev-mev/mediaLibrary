@@ -1,4 +1,4 @@
-import { Audio } from 'expo';
+import { Audio } from 'expo-av';
 import { connect } from 'react-redux';
 import {
   withHandlers,
@@ -9,12 +9,12 @@ import {
 } from 'recompose';
 import uuid from 'uuid';
 import moment from 'moment';
-import { audioOperations } from '../../modules/audio';
+import { addAudioOp, removeAudioOp } from '../../modules/audio';
 import screens from '../../navigation/screens';
 import RecordAudioScreenView from './RecordAudioScreenView';
 
 const mapDispatchToProps = {
-  addAudio: audioOperations.addAudio,
+  addAudio: addAudioOp,
 };
 
 const enhancer = compose(

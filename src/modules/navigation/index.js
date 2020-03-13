@@ -1,6 +1,6 @@
 import reducer from './NavigationReducer';
 
-export * as navigationOperations from './operations';
-export * as navigationTypes from './types';
+export { navigateToApp } from './operations';
+export { RESET_TO } from './types';
 
 export default reducer;

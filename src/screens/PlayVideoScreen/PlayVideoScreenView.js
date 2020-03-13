@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ActivityIndicator, TouchableOpacity, View } from 'react-native';
 import { NavigationActions } from 'react-navigation';
-import { Video } from 'expo';
+import { Video } from 'expo-av';
 import { Feather } from '@expo/vector-icons';
 import { Icon, NavigationButton } from '../../components';
 import { getParam } from '../../utils/navHelpers';

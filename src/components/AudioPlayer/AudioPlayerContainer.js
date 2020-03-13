@@ -4,7 +4,7 @@ import {
   withHandlers,
   compose,
 } from 'recompose';
-import { Audio } from 'expo';
+import { Audio } from 'expo-av';
 import AudioPlayerView from './AudioPlayerView';
 
 const enhancer = compose(

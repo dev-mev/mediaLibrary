@@ -2,7 +2,7 @@ import React from 'react';
 import T from 'prop-types';
 import { View, Text, TouchableOpacity, TextInput } from 'react-native';
 import { Button } from 'react-native-elements';
-import { Ionicons, MaterialIcons } from '@expo/vector-icons/index';
+import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import { Icon } from '../../components';
 import { durationToStr } from '../../utils/dateHelper';
 import s from './styles';

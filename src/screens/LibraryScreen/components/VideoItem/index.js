@@ -6,7 +6,7 @@ import { Entypo } from '@expo/vector-icons';
 import { Icon } from '../../../../components';
 import { globalStyles } from '../../../../styles';
 import { durationToStr } from '../../../../utils/dateHelper';
-import { calendars } from '../../../../constants';
+import { recordDate } from '../../../../constants';
 import s from './styles';
 
 const VideoItem = ({
@@ -56,7 +56,7 @@ const VideoItem = ({
               ellipsizeMode="tail"
               style={[s.dateText, s.secondaryText]}
             >
-              {moment(recordDate).calendar(null, calendars.recordDate)}
+              {moment(recordDate).calendar(null, recordDate)}
             </Text>
           </View>
 

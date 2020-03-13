@@ -1,20 +1,24 @@
 {
   "expo": {
-    "name": "Multimedia Notes",
-    "description": "Multimedia Notes",
-    "slug": "multimedia-notes",
+    "name": "react-native-media-library",
+    "description": "React Native Media Library",
+    "slug": "media-library",
     "privacy": "unlisted",
-    "sdkVersion": "25.0.0",
+    "sdkVersion": "35.0.0",
     "version": "0.1.0",
-    "githubUrl": "https://github.com/apiko-dev/Multimedia-Notes",
+    "githubUrl": "https://mollyvin@bitbucket.org/cultivatelearning/react-native-media-library.git",
     "orientation": "portrait",
     "icon": "./assets/icons/app-icon.png",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ApikoSoftware.multimediaNotes"
+      "bundleIdentifier": "com.mv.mediaLibrary"
     },
     "android": {
-      "package": "com.ApikoSoftware.multimediaNotes"
-    }
+      "package": "com.mv.mediaLibrary"
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
   }
 }
