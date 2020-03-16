@@ -13,11 +13,19 @@
       "bundleIdentifier": "com.mv.mediaLibrary"
     },
     "android": {
-      "package": "com.mv.mediaLibrary"
+      "package": "com.mv.mediaLibrary",
+      "versionCode": 1,
+      "publishBundlePath": "android\\app\\src\\main\\assets\\shell-app.bundle",
+      "publishManifestPath": "android\\app\\src\\main\\assets\\shell-app-manifest.json"
     },
     "platforms": [
       "ios",
       "android"
-    ]
+    ],
+    "isDetached": true,
+    "detach": {
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v119-sdk35.0.0-6758e9de-1e10-40f8-863d-ec8972895cf1.tar.gz"
+    },
+    "scheme": "exp55c8e25e31c14e7f9e022aed25fbc1dd"
   }
 }
