@@ -11,6 +11,8 @@ import expo.loaders.provider.interfaces.AppLoaderPackagesProviderInterface;
 import host.exp.exponent.generated.BasePackageList;
 import okhttp3.OkHttpClient;
 
+import com.shahenlibrary.RNVideoProcessingPackage;
+
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
 
@@ -25,6 +27,8 @@ public class MainApplication extends ExpoApplication implements AppLoaderPackage
   public List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
         // Add your own packages here!
+        new RNVideoProcessingPackage()
+
         // TODO: add native modules!
 
         // Needed for `react-native link`

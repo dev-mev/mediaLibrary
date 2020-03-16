@@ -198,7 +198,8 @@ dependencies {
         // from auto-generated BasePackageList.java
       ]
   ])
-  
+
+  compile project(':react-native-video-processing')
 }
 
 // This has to be down here for some reason
