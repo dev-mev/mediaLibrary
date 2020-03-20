@@ -9,7 +9,7 @@ expo start
 Connect an Android device.
 
 
-Navigate to Expo DevTools (mine opens at: http://localhost:19002).
+Navigate to Expo DevTools.
 
 
 Select `Run on Android device/emulator`
